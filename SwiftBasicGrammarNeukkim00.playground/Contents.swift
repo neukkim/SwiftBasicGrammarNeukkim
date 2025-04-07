@@ -67,5 +67,37 @@ var someCharacter: Character = "ㅁ"
 var someString: String = "ㅁㄴㅁㄴ"
 someString = someString + "임다"
 
+
 //캐릭터 타입 스트링 타입에 대입 불가
 //someString = someCharacter
+
+////야곰문법_03_Any_Anyobject_nil
+
+/*
+Any - swift 모든 타입 지칭 키워드
+AnyObject - 모든 클래스 타입 지칭 프로토콜
+nil - 없음을 의미하는 키워드
+ */
+
+// Any
+var someAny: Any = 100
+someAny = "어떤 타입도 수용 가능"
+print(someAny)
+someAny = 123.22
+print(someAny)
+
+//불가
+//let someDouble: Double = someAny
+
+// AnyObject
+class SomeClass {}
+var someAnyObject: AnyObject = SomeClass()
+
+//class 인스턴스가 아닌 Double 입력 불가
+//someAnyObject = 123.21
+
+//아래 대입 불가
+//someAny = nil
+//someAnyObject = nil
+
+
