@@ -1,4 +1,4 @@
-// 07 조건문
+// 07_조건문
 
 // if, else if, else
 
@@ -47,7 +47,7 @@ default:
     print("unknown")
 }
 
-// 08 반복문
+// 08_반복문
 // for-in, while, repeat-while
 
 var integers = [1, 2, 3]
